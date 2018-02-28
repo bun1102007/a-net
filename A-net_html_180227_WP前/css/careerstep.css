@@ -1,0 +1,628 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	トープページ
+------------------------------------------------------------*/
+#main .careerstep {
+	padding: 203px 0 60px;
+}
+
+#main .careerstep .mainImg {
+	margin-left: -500px;
+	float: right;
+	width: 57.8%;
+	min-width: 787px;
+	height: 370px;
+	overflow: hidden;
+}
+
+#main .careerstep .mainImg img {
+	width: 100%;
+	height: auto;
+}
+
+#main .careerstep .topBox {
+	margin-bottom: 14px;
+}
+
+#main .careerstep .topBox .comBox {
+	padding: 4px 0 0 60px;
+}
+
+#main .careerstep .topBox .comBox h2 {
+	margin-bottom: 57px;
+}
+
+#main .careerstep .topBox .comBox h2 img {
+	width: 386px;
+}
+
+#main .careerstep .topBox .comBox h2 span {
+	position: relative;
+	display: inline-block;
+}
+
+#main .careerstep .topBox .comBox h2 span:before {
+	position: absolute;
+	top: 58px;
+	left: -3038px;
+	width: 3000px;
+	height: 1px;
+	background-color: #000;
+	content: '';
+	animation: line03 1.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+}
+
+@keyframes line03 {
+  0% {
+	  width: 2000px;
+  }
+  100% {
+	  width: 3000px;
+  }
+}
+
+#main .careerstep .topBox .comBox p {
+	margin-bottom: 23px;
+	letter-spacing: -0.5px;
+}
+
+#main .careerstep #saes {
+	margin-bottom: 137px;
+	position: relative;
+	padding-top: 100px;
+}
+
+#main .careerstep #saes:before {
+	margin-left: -29px;
+	width: 58px;
+	height: 1px;
+	background-color: #000;
+	position: absolute;
+	bottom: -122px;
+	left: 50%;
+	content: "";
+}
+
+#main .careerstep .comBoxSmall {
+	margin-bottom: 105px;
+}
+
+#main .careerstep .comBoxSmall p {
+	margin-bottom: 36px;
+	line-height: 1.85;
+}
+
+#main .careerstep .comBoxSmall .photo {
+	margin-bottom: 27px;
+	text-align: center;
+}
+
+#main .careerstep .comBoxSmall .jsImg01 {
+	height: 629px;
+}
+
+#main .careerstep .comBoxSmall .jsImg02 {
+	height: 266px;
+}
+
+#main .careerstep .comBoxSmall .photo img {
+	width: 451px;
+}
+
+#main .careerstep .comBoxSmall .photo01 img {
+	width: 804px;
+}
+
+#main .careerstep .comBoxSmall .photo02 img {
+	width: 569px;
+}
+
+#main .careerstep .comBoxSmall .txt {
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+#main .careerstep .comBoxSmall .comTxtLink a {
+	letter-spacing: 1px;
+}
+
+#main .careerstep h4 {
+	margin-bottom: 38px;
+	font-size: 20px;
+	letter-spacing: -0.7px;
+}
+
+#main .careerstep .imgBox {
+	margin: 0 auto;
+	width: 980px;
+	position: relative;
+} 
+
+#main .careerstep .imgBox a {
+	display: block;
+}
+
+#main .careerstep .imgBox .title {
+	position: absolute;
+	left: -74px;
+	top: -30px;
+	width: 90px;
+	height: 200px;
+	font-size: 30px;
+	color: #000;
+	line-height: 0.9;
+	letter-spacing: 1.5px;
+	-webkit-writing-mode : tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+	z-index: 1000;
+}
+
+#main .careerstep .imgBox .photoBox {
+	height: 312px;
+	width: 490px;
+	float: left;
+	overflow: hidden;
+}
+
+#main .careerstep .imgBox .photoBox img {
+	width: 101%;
+	transition: all 1.6s ease 0s;
+	-moz-transition: all 1.6s ease 0s;
+	-webkit-transition: all 1.6s ease 0s;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#main .careerstep .hover01.on .photoBox img {
+	transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+
+body.ie #main .careerstep .imgBox .photoBox img,
+body.ie #main .careerstep .hover01.on .photoBox img {
+	transform: none;
+	-webkit-transform: none;
+	-moz-transition: none;
+	filter: none;
+}
+
+#main .careerstep .imgBox .textBox {
+	width: 490px;
+	float: right;
+	display: table;
+	background-color: #333333;
+	transition: all ease 1s;
+	-webkit-transition: all ease 1s;
+}
+
+@media all and (-ms-high-contrast:none){
+	#main .careerstep .imgBox .textBox {
+		height: 312px;
+	}
+}
+
+#main .careerstep .hover01.on .textBox {
+	background-color: #000;
+}
+
+#main .careerstep .imgBox .subBox {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#main .careerstep .imgBox p {
+	color: #fff;
+}
+
+#main .careerstep .imgBox .ttl {
+	margin-bottom: 35px;
+	font-size: 18px;
+	font-weight: bold;
+	position: relative;
+}
+
+#main .careerstep .imgBox .ttl:after {
+	margin-left: -10px;
+	width: 20px;
+	height: 2px;
+	background-color: #ADADAD;
+	position: absolute;
+	bottom: -17px;
+	left: 50%;
+	content: "";
+}
+
+#main .careerstep .imgBox .tag {
+	font-size: 12px;
+}
+
+#main .careerstep .imgBox .name {
+	margin-bottom: 30px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#main .careerstep #regular {
+	margin-bottom: 140px;
+	position: relative;
+	padding-top: 100px;
+}
+
+#main .careerstep #regular:before {
+	margin-left: -29px;
+	width: 58px;
+	height: 1px;
+	background-color: #000;
+	position: absolute;
+	bottom: -122px;
+	left: 50%;
+	content: "";
+}
+
+#main .careerstep #regular p {
+	margin-bottom: 44px;
+}
+
+#main .careerstep #regular .comTxtLink {
+	margin-bottom: 42px;
+	text-align: center;
+}
+
+#main .careerstep #profession {
+	margin-bottom: 150px;
+	padding-top: 100px;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+	#main .careerstep {
+		padding: 22px 0 95px;
+	}
+
+	#main .careerstep .mainImg {
+		margin: 136px 0 0 -300px;
+		width: 63.1%;
+		min-width: inherit;
+		height: 110px;
+	}
+
+	#main .careerstep .mainImg img {
+		width: 100%;
+		height: auto;
+	}
+
+	#main .careerstep .topBox {
+		margin-bottom: 5px;
+	}
+
+	#main .careerstep .topBox .comBox {
+		padding: 0 0 0 22px;
+	}
+	
+	#main .careerstep .topBox .comBox h2 {
+		margin: 0 0 25px 0px;
+	}
+	
+	#main .careerstep .topBox .comBox h2 span:before {
+		top: 32px;
+		left: -3015px;
+	}
+
+	#main .careerstep .topBox .comBox h2 img {
+		width: 209px;
+	}
+
+	#main .careerstep .topBox .comBox p {
+		font-size: 10px;
+		margin: 0 -15px 18px 0;
+		letter-spacing: 0px;
+		line-height: 2;
+	}
+
+	#main .careerstep #saes {
+		margin-bottom: 50px;
+		padding-top: 70px;
+	}
+
+	#main .careerstep #saes:before {
+		margin-left: -15px;
+		width: 30px;
+		height: 1px;
+		bottom: -50px;
+	}
+
+	#main .careerstep .comBoxSmall {
+		margin: 0 0 50px 0;
+	}
+
+	#main .careerstep .comBoxSmall p {
+		margin-bottom: 25px;
+		line-height: 1.75;
+		font-size: 12px;
+	}
+
+	#main .careerstep .comBoxSmall .photo {
+		margin: 0 26px 10px;
+		text-align: center;
+	}
+	
+	#main .careerstep .comBoxSmall .photo01 {
+		margin: 0 -5px 10px;
+	}
+	
+	#main .careerstep .comBoxSmall .photo img {
+		width: 100%;
+	}
+
+	#main .careerstep .comBoxSmall .txt {
+		font-size: 10px;
+	}
+
+	#main .careerstep h4 {
+		margin-bottom: 30px;
+		font-size: 12px;
+		letter-spacing: -0.7px;
+	}
+
+	#main .careerstep .imgBox {
+		margin: 0 auto;
+		width: 73%;
+	} 
+	
+	#main .careerstep .imgBox .title {
+		left: -41px;
+		top: -18px;
+		width: 50px;
+		height: 150px;
+		font-size: 18px;
+		line-height: 1;
+		letter-spacing: 1px;
+	}
+
+	#main .careerstep .imgBox .photoBox {
+		width: 100%;
+		height: auto;
+		float: none;
+	}
+	
+	#main .careerstep .comBoxSmall .jsImg01 {
+		height: auto;
+	}
+	
+	#main .careerstep .comBoxSmall .jsImg02 {
+		height: auto;
+	}
+
+	
+	#main .careerstep .imgBox .textBox {
+		margin-top: -1px;
+		padding: 25px  0;
+		width: 100%;
+		height: auto !important;
+		float: none;
+	}
+	
+	#main .careerstep .imgBox .textBox p {
+		font-size: 11px;
+		line-height: 1.7;
+	}
+
+	#main .careerstep .imgBox .textBox .ttl {
+		margin-bottom: 20px;
+		font-size: 12px;
+		line-height: 1.5;
+	}
+	
+	#main .careerstep .imgBox .textBox p.en {
+		letter-spacing: 1px;
+	}
+
+	#main .careerstep .imgBox .ttl:after {
+		margin-left: -8px;
+		width: 16px;
+		height: 2px;
+		background-color: #ADADAD;
+		bottom: -10px;
+		left: 50%;
+		content: "";
+	}
+
+	#main .careerstep .imgBox .tag {
+		font-size: 10px;
+	}
+
+	#main .careerstep .imgBox .name {
+		margin-bottom: 11px;
+		font-size: 12px;
+		font-weight: normal;
+	}
+
+	#main .careerstep #regular {
+		margin-bottom: 50px;
+		padding-top: 70px;
+	}
+
+	#main .careerstep #regular:before {
+		margin-left: -15px;
+		width: 30px;
+		height: 1px;
+		bottom: -50px;;
+	}
+
+	#main .careerstep #regular p {
+		margin-bottom: 20px;
+	}
+	
+	#main .careerstep #regular .comTxtLink {
+		margin-bottom: 20px;
+		padding-right: 0;
+		font-size: 11px;
+	}
+
+	#main .careerstep #profession {
+		margin-bottom: 0;
+		padding-top: 70px;
+	}
+	
+}
+
+@media all and (min-width: 0) and (max-width: 350px) {
+	#main .careerstep .topBox .comBox p {
+		margin-right: -20px;
+		letter-spacing: -1px;
+	}
+}
+
+
+/*------------------------------------------------------------
+	careerstepDetail
+------------------------------------------------------------*/
+#main .detail {
+	padding: 213px 0 140px;
+}
+
+#main .detail .contBox {
+    margin-bottom: 93px;
+}
+
+#main .detail .backLink {
+	padding-left: 53px;
+}
+
+#main .detail.comDetail .textBox .photo {
+	margin-bottom: 72px;
+}
+
+#main .detail .backLink a {
+	padding-left: 85px;
+	position: relative;
+}
+
+#main .detail .backLink a:before, 
+#main .detail .backLink a:after {
+    position: absolute;
+    top: 1px;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+
+#main .detail .backLink a:before {
+    left: 5px;
+    width: 70px;
+    height: 1px;
+    background: #000;
+}
+
+#main .detail .backLink a:after {
+    left: 9px;
+    width: 13px;
+    height: 13px;
+    border-top: 1px solid #000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#main .detail .backLink a:hover:before {
+	animation: arrow08 .4s;
+}
+
+#main .detail .backLink a:hover:after {
+	animation: arrow09 .4s;
+}
+
+#main .comDetail .textBox p {
+	line-height: 2.2;
+}
+
+@keyframes arrow08 {
+  50% {
+    left: -5px;
+  }
+  100% {
+    left: 5px;
+  }
+}
+
+@keyframes arrow09 {
+  50% {
+    left: -1px;
+  }
+  100% {
+    left: 9px;
+  }
+}
+
+
+
+@media all and (min-width: 0) and (max-width: 767px) {
+	#main .detail {
+		padding: 33px 0 85px;
+	}
+	
+	#main .h3Ttl {
+		margin-bottom: 150px;
+	}
+	
+	#main .detail.comDetail .mainBox {
+		margin-bottom: 43px;
+	}
+	
+	#main .detail .contBox {
+		margin-bottom: 40px;
+	}
+	
+	#main .detail.comDetail .textBox p {
+		margin-bottom: 59px;
+	}
+	
+	#main .detail.comDetail .textBox .photo {
+		margin-bottom: 60px;
+	}
+	
+	#main .detail.comDetail .textBox .ttl {
+		margin-bottom: 7px;
+	}
+	
+	#main .detail .backLink {
+		padding-left: 0;
+	}
+	
+	#main .detail .backLink a {
+		padding-left: 45px;
+		font-size: 11px;
+	}
+
+	#main .detail .backLink a:before {
+		left: 5px;
+		width: 36px;
+	}
+
+	#main .detail .backLink a:after {
+		left: 7px;
+		width: 8px;
+		height: 8px;
+	}
+
+	#main .detail .backLink a:hover:before {
+		animation: none;
+	}
+	
+	#main .detail .backLink a:hover:after {
+		animation: none;
+	}
+}
+

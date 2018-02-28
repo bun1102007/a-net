@@ -1,0 +1,446 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	トープページ
+------------------------------------------------------------*/
+#main .support .topBox .comBox h2 img {
+	width: 273px;
+}
+
+#main .support #training,
+#main .support #uniform,
+#main .support #regions,
+#main .support #child {
+	padding-top: 100px;
+	margin-bottom: 130px;
+	position: relative;
+}
+
+#main .support #training:before,
+#main .support #uniform:before,
+#main .support #regions:before {
+	margin-left: -29px;
+	width: 58px;
+	height: 1px;
+	background-color: #000;
+	position: absolute;
+	bottom: -122px;
+	left: 50%;
+	content: "";
+}
+
+#main .support #uniform .headLine04 {
+	margin-bottom: 54px;
+}
+
+#main .support #uniform h4 {
+	margin-bottom: 27px;
+}
+
+#main .support #uniform .comBoxSmall {
+    margin-bottom: 40px;
+}
+
+#main .support #regions .txt03 {
+	margin-bottom: 7px;
+}
+
+#main .support #child .headLine04 {
+	margin-bottom: 60px;
+}
+
+#main .support .comBoxSmall p {
+	margin-bottom: 42px;
+}
+
+#main .support .comBoxSmall .photo {
+	margin-bottom: 74px;
+}
+#main .support .comBoxSmall .jsImg04 {
+	height: 213px;
+}
+
+#main .support .jsImg05 {
+	height: 446px;
+}
+
+
+#main .support .comBoxSmall .photo img {
+	width: 800px;
+}
+
+#main .support .accordionUl {
+	margin-bottom: 35px;
+	border-top: 2px solid #000;
+}
+
+#main .support .accordionUl > li {
+	border-bottom: 2px solid #000;
+}
+
+#main .support .accordionUl > li > a {
+	padding: 15px 0;
+	display: block;
+	font-size: 18px;
+	letter-spacing: 1.5px;
+	font-weight: bold;
+	background: url(/rc/img/common/icon02.png) no-repeat right center;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+
+#main .support .accordionUl > li.on > a {
+	background-image: url(/rc/img/common/icon02_on.png);
+}
+
+#main .support .accordionUl > li >a:hover {
+	background-color: #F4F4F4;
+}
+
+#main .support .accordionUl > li.letter a {
+	letter-spacing: -1px;
+}
+
+#main .support .accordionUl > li > a span {
+	margin-left: 18px;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	font-weight: normal;
+}
+
+#main .support .comDl {
+	display: none;
+}
+
+#main .support .txtDl {
+	margin-top: -8px;
+}
+ 
+#main .support .txtDl dt {
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#main .support .txtDl dd {
+	padding: 5px 0 0 161px;
+	line-height: 1.85;
+}
+
+#main .support .txtDl li {
+	padding: 0 0 33px 44px;
+	position: relative;
+}
+
+#main .support .txtDl li span {
+	position: absolute;
+	left: 0;
+	top: -13px; 
+	font-size: 30px;
+}
+
+#main .support #regular {
+	margin-bottom: 0;
+}
+
+#main .support #regular .comBoxSmall {
+	margin-bottom: 40px;
+}
+
+#main .support .photoUl img {
+	width: 100%;
+}
+
+#main .support .h4Ttl {
+	margin-bottom: 20px;
+	font-size: 17px;
+	text-align: center;
+	line-height: 1.2;
+}
+
+#main .support .supportTxt {
+	text-align: center;
+}
+
+#main .support .supportTxt img {
+	width: 848px;
+}
+
+#main .support #child .txt {
+	width: 660px;
+	margin: 30px auto 115px;
+	padding-left: 1em;
+	font-size: 13px;
+	line-height: 1.53;
+	text-indent: -1em;
+	box-sizing: border-box;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+	
+	#main .support #training,
+	#main .support #uniform,
+	#main .support #regions,
+	#main .support #child {
+		padding-top: 70px;
+		margin-bottom: 45px;
+	}
+	
+	#main .support #training:before,
+	#main .support #uniform:before,
+	#main .support #regions:before {
+			margin-left: -15px;
+			width: 30px;
+			height: 1px;
+			bottom: -50px;
+	}
+	
+	#main .support #child {
+		margin-bottom: 0;
+	}
+
+	#main .support #uniform .headLine04 {
+		margin-bottom: 30px;
+	}
+
+	#main .support #uniform h4 {
+		margin: 0 5px 14px;
+		font-size: 16px;
+		line-height: 1.44;
+	}
+	
+	#main .support #uniform p {
+		margin-bottom: 40px;
+	}
+
+	#main .support #child .headLine04 {
+		margin-bottom: 30px;
+	}
+
+	#main .support #uniform .comBoxSmall {
+		margin: 0 20px;
+	}
+	
+	#main .support .topBox .comBox h2 img {
+		width: 150px;
+	}
+	
+	#main .support .topBox {
+		margin-bottom: 3px;
+	}
+	
+	#main .support .mainImg {
+		margin-top: 139px;
+	}
+	
+	#main .support .comBoxSmall p {
+		margin-bottom: 25px;
+	}
+	
+	#main .support .comBoxSmall p.txt04 {
+		font-size: 10px;
+		line-height: 1.5;
+	}
+	
+	#main .support .comBoxSmall .txt {
+		font-size: 12px;
+	}
+	
+	#main .support #regions .txt03 {
+		margin-bottom: 10px;
+	}
+
+	#main .support .comBoxSmall .photo {
+		margin: 0 0 42px;
+	}
+	
+	#main .support .comBoxSmall .photo img {
+		width: 100%;
+	}
+
+	#main .support .accordionUl {
+		margin-bottom: 15px;
+		border-width: 1px;
+	}
+
+	#main .support .accordionUl > li {
+		border-width: 1px;
+	}
+
+	#main .support .accordionUl > li > a {
+		padding: 14px 0 13px;
+		font-size: 12px;
+		letter-spacing: 1px;
+		background-size: 10px auto;
+	}
+	
+	#main .support .accordionUl > li >a:hover {
+		background-color: #FFF;
+	}
+
+	#main .support .accordionUl > li > a span {
+		margin-left: 9px;
+		font-size: 10px;
+		letter-spacing: 0.5px;
+		font-weight: normal;
+	}
+	
+	#main .support .spTxt {
+		font-size: 10px;
+	}
+	
+	#main .support h4 {
+		margin: 0 0 13px;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+
+	#main .support .txtDl {
+		margin: -8px 0 25px;
+	}
+ 
+	#main .support .txtDl dt {
+		float: none;
+		font-size: 13px;
+		text-align: center;
+	}
+
+	#main .support .txtDl dd {
+		padding: 11px 0 0 0;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 1.5;
+	}
+
+	#main .support .txtDl li {
+		padding: 0 0 13px 30px;
+	}
+
+	#main .support .txtDl li span {
+		top: -5px; 
+		font-size: 20px;
+	}
+
+	#main .support #regular .comBoxSmall {
+		margin: 0 20px 20px;
+	}
+	
+	#main .support .h4Ttl {
+		margin-bottom: 16px;
+		font-size: 13px;
+		letter-spacing: 0.5px;
+	}
+	
+	#main .support .supportTxt {
+		margin: 0 -11px;
+	}
+	
+	#main .support .supportTxt img {
+		width: 100%;
+	}
+	
+	#main .support #child .txt {
+		width: auto;
+		margin: 10px 0 55px 20px;
+		font-size: 10px;
+		line-height: 1.5;
+	}
+	
+	#main .support .h4Ttl01 {
+		font-size: 12px;
+		margin-bottom: 30px;
+		letter-spacing: 0.5px;
+	}
+}
+
+
+
+/*------------------------------------------------------------
+	support-detail
+------------------------------------------------------------*/
+#main .detail.supportDetail {
+	padding-bottom: 135px;
+}
+
+#main .detail.supportDetail .scheduleBox {
+	margin: 0 auto 95px;
+	width: 800px;
+}
+
+#main .detail.supportDetail .scheduleBox .txtImg {
+	float: left;
+}
+
+#main .detail.supportDetail .scheduleBox .txtImg img {
+	width: 714px;
+}
+
+#main .detail.supportDetail .scheduleBox .ttl {
+	float: right;
+}
+
+#main .detail.supportDetail .scheduleBox .ttl img {
+	width: 56px;
+}
+
+#main .detail.supportDetail p {
+	margin-bottom: 48px;
+}
+
+#main .detail.supportDetail .textBox .photo {
+	margin-bottom: 78px;
+}
+
+#main .detail.supportDetail .textBox .ttl {
+	margin-bottom: 24px;
+}
+
+#main .detail.supportDetail .contBox {
+	margin-bottom: 118px;
+}
+
+#main .comDetail .textBox p {
+	line-height: 2.2;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+	#main .detail.supportDetail .headLine07 {
+		margin-bottom: 20px;
+	}
+
+	#main .detail.supportDetail .headLine07 .txt01 {
+		top: 180px;
+	}
+	
+	#main .detail.supportDetail {
+		padding-bottom: 85px;
+	}
+	
+	#main .detail.supportDetail .scheduleBox {
+		margin: 0 auto 42px;
+		width: auto;
+	}
+	
+	#main .detail.supportDetail .scheduleBox .txtImg {
+		width: 84.9%;
+	}
+	
+	#main .detail.supportDetail .scheduleBox .txtImg img {
+		width: 100%;
+	}
+	
+	#main .detail.supportDetail .scheduleBox .ttl {
+		width: 9.7%;
+	}
+	
+	#main .detail.supportDetail .scheduleBox .ttl img {
+		width: 100%;
+	}
+	
+	#main .detail.supportDetail .contBox {
+		margin-bottom: 70px;
+	}
+	
+	#main .detail.supportDetail .textBox .photo {
+		margin-bottom: 60px;
+	}
+}

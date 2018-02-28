@@ -1,0 +1,173 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	entry-handi
+------------------------------------------------------------*/
+#entry.handi h3 {
+	margin-bottom: 45px;
+}
+
+#entry.handi p {
+	line-height: 2.42;
+}
+
+#entry.handi .linkUl {
+	margin-top: 60px;
+}
+
+#entry.handi .linkUl li {
+	margin-right: 40px;
+	float: left;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+	#entry.handi #sideBar .sNavi02 {
+		margin-bottom: 22px;
+	}
+	
+	#entry.handi p {
+		line-height: 1.91;
+		font-size: 12px;
+	}
+
+	#entry.handi .linkUl {
+		margin-top: 29px;
+	}
+	
+	#entry.handi .linkUl li {
+		width: 47.1%;
+		margin-right: 0;
+	}
+	
+	#entry.handi .linkUl li:nth-child(2n) {
+		float: right;
+	}
+}
+
+/*------------------------------------------------------------
+	handi_guide
+------------------------------------------------------------*/
+#entry.handi_guide h3 {
+	margin-bottom: 21px;
+}
+
+#entry.handi_guide .comTable {
+	margin-bottom: 30px;
+}
+
+#entry.handi_guide .comTable th,
+#entry.handi_guide .comTable td {
+	padding: 14px 0;
+}
+
+#entry.handi_guide .comTable tr:last-child th,
+#entry.handi_guide .comTable tr:last-child td {
+	border-bottom: none;
+}
+
+#entry.handi_guide .comTable th {
+	width: 21.5%;
+}
+
+#entry.handi_guide .comTable .graduateDl01 {
+	margin-top: 25px;
+}
+
+#entry.handi_guide .comTable .graduateDl02 dt,
+#entry.handi_guide .comTable .graduateDl02 dd {
+	display: inline;
+}
+
+#entry.handi_guide .comTable dt {
+	font-weight: bold;
+}
+
+#entry.handi_guide .comTable ul li {
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+#entry.handi_guide #conts .comTable td .comTxtLink a {
+	margin: 0;
+}
+
+#entry.handi_guide .comTxtLink {
+	margin-top: 15px;
+}
+
+#entry.handi_guide .comBgBox {
+	padding-bottom: 25px;
+}
+
+#entry.handi_guide .comBgBox dt {
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#entry.handi_guide .comBgBox dd {
+	padding: 0 0 30px 9em;
+}
+
+#entry.handi_guide .comBgBox dd:last-child {
+	padding-bottom: 0;
+}
+
+#entry.handi_guide .comBgBox dd p {
+	margin-bottom: 25px;
+	line-height: 1.85;
+}
+
+#entry.handi_guide .comBgBox dd p:last-child {
+	margin-bottom: 0;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+	#entry.handi_guide #sideBar .sNavi02 {
+		margin-bottom: 16px;
+	}
+
+	#entry.handi_guide .comTable {
+		margin-bottom: 15px;
+	}
+
+	#entry.handi_guide .comTable th,
+	#entry.handi_guide .comTable td {
+		padding: 18px 0 15px;
+	}
+
+	#entry.handi_guide .comTable th {
+		width: 23.7%;
+	}
+	
+	#entry.handi_guide .comTable .graduateDl01 {
+		margin-top: 18px;
+	}
+
+	#entry.handi_guide #conts .comTable td .comTxtLink a {
+		font-size: 11px;
+	}
+
+	#entry.handi_guide .comTxtLink {
+		margin-top: 10px;
+	}
+
+	#entry.handi_guide .comBgBox dt {
+		font-size: 12px;
+	}
+
+	#entry.handi_guide .comBgBox dd {
+		padding: 0 0 18px 6em;
+		font-size: 12px;
+		line-height: 1.5;
+	}
+
+	#entry.handi_guide .comBgBox dd p {
+		margin-bottom: 20px;
+		line-height: 1.5;
+	}
+	
+	#entry.handi_guide .comBgBox {
+		padding-bottom: 15px;
+	}
+
+}

@@ -1,0 +1,350 @@
+@charset "utf-8";
+
+/*------------------------------------------------------------
+	graduate
+------------------------------------------------------------*/
+#entry.graduate .btmLink {
+	width: 420px;
+	margin: 0 auto;
+}
+
+#entry.graduate .btmLink p {
+	margin-bottom: 20px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#entry.graduate .btmLink a {
+	display: block;
+	padding: 20px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+	#entry.graduate .btmLink {
+		margin: 0 10px;
+		width: auto;
+	}
+	
+	#entry.graduate .btmLink p {
+		margin-bottom: 15px;
+		font-size: 10px;
+	}
+	
+	#entry.graduate .btmLink a {
+		padding: 18px;
+		font-size: 15px;
+	}
+}
+
+/*------------------------------------------------------------
+	entry-graduate-schedule
+------------------------------------------------------------*/
+#entry.graduate-schedule h3 {
+	margin-bottom: 32px;
+}
+
+#entry.graduate-schedule .txtImg {
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+#entry.graduate-schedule .txtImg img {
+	width: 759px;
+}
+
+#entry.graduate-schedule .txtBox p {
+	padding-left: 1em;
+	text-indent: -1em;
+	float: right;
+	width: 340px;
+	font-size: 12px;
+	line-height: 1.66;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+	#sideBar .sNavi02 {
+		margin-bottom: 16px;
+	}
+		
+	#entry.graduate-schedule .txtImg {
+		margin-bottom: 17px;
+	}
+
+	#entry.graduate-schedule .txtImg img {
+		width: 100%;
+		height: auto;
+	}
+	
+	#entry.graduate-schedule .txtBox {
+		padding-right: 5px;
+	}
+
+	#entry.graduate-schedule .txtBox p {
+		width: 290px;
+		font-size: 10px;
+		line-height: 1.4;
+	}
+}
+
+/*------------------------------------------------------------
+	entry-graduate-qa
+------------------------------------------------------------*/
+#entry.graduate-qa h3 {
+	margin-bottom: 17px;
+}
+
+#entry.graduate-qa p {
+	line-height: 1.85;
+}
+
+#entry.graduate-qa .comTxtLink {
+	margin: 20px 0 35px;
+	text-align: right;
+}
+
+#entry.graduate-qa .comDl {
+	padding-bottom: 0;
+}
+
+#entry.graduate-qa .comDl:last-child {
+	border-bottom: 1px dotted #B2B2B2;
+}
+
+#entry.graduate-qa .comDl dt,
+#entry.graduate-qa .comDl dd {
+	position: relative;
+}
+
+#entry.graduate-qa .comDl dt {
+	padding: 37px 15px 30px 60px;
+	font-size: 16px;
+	line-height: 1.62;
+	letter-spacing: 0px;
+}
+
+#entry.graduate-qa .comDl dd {
+	line-height: 1.85;
+	padding: 0 0 36px 60px;
+}
+
+#entry.graduate-qa .comDl span {
+	position: absolute;
+	left: 0;
+	top: 30px;
+}
+
+#entry.graduate-qa .comDl span img {
+	width: 42px;
+}
+
+#entry.graduate-qa .comDl .aTxt {
+	top: -8px;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+	#entry.graduate-qa #sideBar .sNavi02 {
+		margin-bottom: 13px;
+	}
+	
+	#entry.graduate-qa h3 {
+		margin-bottom: 12px;
+	}
+
+	#entry.graduate-qa p {
+		line-height: 1.5;
+		font-size: 12px;
+	}
+	
+	#entry.graduate-qa .comTxtLink {
+		margin: 5px 0 11px;
+		font-size: 11px;
+	}
+
+	#entry.graduate-qa .link a {
+	}
+
+	#entry.graduate-qa .comDl dt {
+		padding: 21px 15px 21px 40px;
+		font-size: 12px;
+		line-height: 1.5;
+	}
+
+	#entry.graduate-qa .comDl dd {
+		padding: 0 0 16px 40px;
+		line-height: 1.5;
+		font-size: 12px;
+	}
+
+	#entry.graduate-qa .comDl span {
+		left: 0;
+		top: 15px;
+	}
+	
+	#entry.graduate-qa .comDl span img {
+		width: 27px;
+		height: auto;
+	}
+	
+	#entry.graduate-qa .comDl .aTxt {
+		top: -6px;
+	}
+
+}
+/*------------------------------------------------------------
+	entry-graduate-voice
+------------------------------------------------------------*/
+#entry.graduate-voice h3 {
+	margin-bottom: 17px;
+}
+
+#entry.graduate-voice p {
+	line-height: 1.85;
+}
+
+#entry.graduate-voice .linkUl {
+	margin: 14px 0 1px;
+}
+
+#entry.graduate-voice .linkUl li {
+	margin-top: 30px;
+	width: 358px;
+	float: left;
+	border: 1px solid #000;
+}
+
+#entry.graduate-voice .linkUl li:nth-child(2n) {
+	float: right;
+}
+
+#entry.graduate-voice .linkUl li a {
+	display: table;
+	width: 100%;
+	height: 149px;
+	background: url(/rc/img/entry/link_bg01.png) no-repeat center center;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+
+#entry.graduate-voice .linkUl li a:hover {
+	background-color: #f4f4f4;
+}
+
+#entry.graduate-voice .linkUl li:nth-child(2) a {
+	background-image: url(/rc/img/entry/link_bg02.png);
+}
+
+#entry.graduate-voice .linkUl li:nth-child(3) a {
+	background-image: url(/rc/img/entry/link_bg03.png);
+}
+
+#entry.graduate-voice .linkUl li:nth-child(4) a {
+	background-image: url(/rc/img/entry/link_bg04.png);
+}
+
+#entry.graduate-voice .linkUl li a span {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#entry.graduate-voice h4 {
+	padding-top: 77px;
+	margin: 0 0 8px;
+	font-size: 18px;
+}
+
+#entry.graduate-voice h4 span {
+	margin-right: 20px;
+	font-size: 40px;
+	vertical-align: middle;
+	font-family: MS PGothic, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3" , sans-serif;
+}
+
+#entry.graduate-voice .headLine05 {
+	margin-bottom: 8px;
+}
+
+#entry.graduate-voice .txtUl {
+	margin-bottom: 40px;
+	border-top: 1px dotted #B2B2B2;
+	line-height: 1.85;
+}
+
+#entry.graduate-voice .txtUl01 {
+	margin-bottom: 2px;
+}
+
+#entry.graduate-voice .txtUl li {
+	text-indent: -1em;
+	padding: 14px 0 10px 1em;
+	border-bottom:  1px dotted #B2B2B2;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+	#entry.graduate-voice #sideBar .sNavi02 {
+		margin-bottom: 12px;
+	}
+
+	#entry.graduate-voice p {
+		line-height: 1.5;
+		font-size: 12px;
+	}
+
+	#entry.graduate-voice .linkUl {
+		margin: 0 0 0;
+	}
+
+	#entry.graduate-voice .linkUl li {
+		margin-top: 20px;
+		width: 46.5%;
+	}
+
+	#entry.graduate-voice .linkUl li a {
+		height: 84px;
+		background-size: auto 57px;
+	}
+	
+	#entry.graduate-voice .linkUl li a:hover {
+		background-color: #fff;
+	}
+
+	#entry.graduate-voice .linkUl li a span {
+		font-size: 12px;
+		line-height: 1.5;
+	}
+
+	#entry.graduate-voice h4 {
+		padding-top: 50px;
+		margin-bottom: 5px;
+		font-size: 12px;
+	}
+
+	#entry.graduate-voice h4 span {
+		margin-right: 18px;
+		font-size: 30px;
+	}
+
+	#entry.graduate-voice .headLine05 {
+		margin-bottom: 8px;
+	}
+
+	#entry.graduate-voice .txtUl {
+		margin-bottom: 27px;
+		line-height: 1.5;
+		font-size: 12px;
+	}
+
+	#entry.graduate-voice .txtUl01 {
+		margin-bottom: 0;
+	}
+
+	#entry.graduate-voice .txtUl li {
+		padding: 11px 0 11px 1em;
+	}	
+
+}

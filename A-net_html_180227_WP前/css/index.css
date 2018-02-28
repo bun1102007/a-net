@@ -1,0 +1,1078 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	トープページ
+------------------------------------------------------------*/
+.loading {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: table;
+	table-layout: fixed;
+	background: #FFF;
+	z-index: 9999;
+}
+
+.loading .pho {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#main .mainVisual {
+	padding: 0 0 62px 171px;
+	width: 100%;
+    height: 100vh;
+    overflow: hidden;
+	position: fixed;
+	left: 0;
+	top: 0;
+	box-sizing: border-box;
+}
+
+#main .mainVisual .sample {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: url(/rc/img/top/dot.png) repeat;
+	z-index: 1;
+}
+
+#main .mainVisual .arrow {
+	position: absolute;
+	bottom: 14px;
+	right: 29px;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+#main .mainVisual .arrow a {
+	padding: 20px 0;
+}
+
+#main .mainVisual .arrow:hover {
+	bottom: 4px;
+}
+
+#main .mainVisual .videoBox {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#main .mainVisual video {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.android #main .mainVisual video,
+.other #main .mainVisual video{
+	display: none !important;
+	z-index: -1;
+	width: auto !important;
+	height: auto !important;
+}
+
+.android #main .mainVisual .videoBox,
+.other #main .mainVisual .videoBox {
+	background: url(/rc/img/top/video_img01.jpg) no-repeat left top;
+	background-size: cover;
+}
+
+#main .mainVisual .size01 {
+	width: 100%;
+	height: auto;
+}
+
+#main .mainVisual .size02 {
+	width: auto;
+	height: 100%;
+}
+
+#main .mainVisual .txtBox {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 20.3%;
+	width: 500px;
+	z-index: 2;
+}
+
+#main .mainVisual h2 {
+	margin: 0 0 35px -129px;
+}
+
+#main .mainVisual h2 img {
+	width: 387px;
+	height: auto;
+}
+
+#main .mainVisual h3 {
+	margin-bottom: 80px;
+	position: relative;
+}
+
+#main .mainVisual h3:after {
+	width: 80px;
+	height: 2px;
+	position: absolute;
+	left: 1px;
+	bottom: -41px;
+	content: "";
+	background-color: #000;
+}
+
+#main .mainVisual h3 img {
+	width: 514px;
+}
+
+#main .mainVisual p {
+	margin-bottom: 13px;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	line-height: 2.13;
+}
+
+#main .mainVisual p:last-child {
+	margin-bottom: 0;
+}
+
+#main .indexBgBox {
+	margin-top: 100vh;
+	padding-bottom: 190px;
+	position: relative;
+	background: #FFF;
+	z-index: 10;
+}
+
+#main .recruitBox {
+	margin-bottom: 101px;
+	padding-top: 100px;
+}
+
+#main .recruitBox .comBox {
+	position: relative;
+}
+
+#main .recruitBox .photo {
+	position: absolute;
+	left: -133px;
+	top: 0;
+}
+
+#main .recruitBox .subBox {
+	width: 760px;
+	float: right;
+	clear: both;
+}
+
+#main .recruitBox h3 {
+	margin-bottom: 63px;
+}
+
+#main .recruitBox h3 img {
+	width: 214px;
+}
+
+#main .recruitBox li {
+	margin-bottom: 51px;
+	width: 340px;
+	float: left;
+}
+
+#main .recruitBox li:nth-child(2n) {
+	float: right;
+}
+
+#main .recruitBox .ttl {
+	margin-bottom: 25px;
+	line-height: 1.8;
+	font-size: 19px;
+	font-weight: bold;
+	letter-spacing: 4px;
+	border-bottom: 1px solid #000;
+}
+
+#main .recruitBox .ttl span {
+	font-size: 11px;
+	letter-spacing: 0;
+}
+
+#main .recruitBox dl {
+	font-size: 12px;
+}
+
+#main .recruitBox dt {
+	margin-bottom: 6px;
+}
+
+#main .recruitBox dt span {
+	padding: 5px 11px 4px;
+	margin-left: 8px;
+	display: inline-block;
+	color: #fff;
+	line-height: 1;
+	font-size: 11px;
+	background-color: #000;
+}
+
+#main .recruitBox dt .tag {
+	background-color: #008254;
+}
+
+#main .recruitBox a {
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+
+#main .recruitBox a:hover {
+	color: #999999;
+}
+
+#main p {
+	font-size: 13px;
+	line-height: 2.6;
+}
+
+#main .imgBoxR {
+	margin: 0 0 187px 23px;
+	position: relative;
+}
+
+#main .imgBoxR a {
+	display: block;
+}
+
+#main .imgBoxR .textBox {
+	margin-top: 68px;
+	width: 460px;
+}
+
+#main .imgBoxR h2 {
+	margin-bottom: 62px;
+}
+
+#main .imgBoxR h2 img {
+	width: 235px;
+}
+
+#main .imgBoxR h2 span {
+	margin: 52px -220px 0 63px;
+	padding-right: 240px;
+	display: inline-block;
+	position: relative;
+	z-index: 1000;
+}
+
+#main .imgBoxR h2 span img {
+	width: 82px;
+}
+
+#main .imgBoxR h2 span:before, 
+#main .imgBoxR h2 span:after {
+    position: absolute;
+    top: -19px;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+
+#main .imgBoxR h2 span:before {
+    left: 132px;
+    width: 135px;
+    height: 1px;
+    background: #000;
+}
+
+#main .imgBoxR h2 span:after {
+    left: 252px;
+    width: 13px;
+    height: 13px;
+    border-top: 1px solid #000;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#main .hover01 {
+	cursor: pointer;
+}
+
+#main .hover01.on h2 span:before{
+	left: 132px;
+	width: 185px;
+}
+
+#main .hover01.on h2 span:after{
+	left: 302px;
+}
+
+#main .hover01 .topJs {
+	overflow: hidden;
+	width: 585px;
+}
+
+#main .hover01 .topJs img {
+	width: 100%;
+	transition: all 1.6s ease 0s;
+	-moz-transition: all 1.6s ease 0s;
+	-webkit-transition: all 1.6s ease 0s;
+	transform: scale(1);
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+	-webkit-backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d;
+}
+
+#main .hover01.on .topJs img {
+	transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+body.ie #main .hover01 .topJs img,
+body.ie #main .hover01.on .topJs img {
+	transform: none;
+	-webkit-transform: none;
+	-moz-transition: none;
+	filter: none;
+}
+
+#main .imgBoxR .ttl {
+	margin-bottom: 14px;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 1.6;
+	letter-spacing: 2.5px;
+}
+
+#main .interview {
+	min-width: 1100px;
+	margin-bottom: 166px;
+}
+
+#main .interview .photo {
+	margin: -265px -133px 0 0;
+	float: right;
+	max-width: 65%;
+}
+
+#main .interview .photo img {
+	width: 100%;
+}
+
+#main .interview .subBox {
+	margin-left: 18px;
+}
+
+#main .interview .photoBox {
+	margin-right: 118px;
+	float: left;
+}
+
+#main .interview .ttlBox {
+	margin-top: 2px;
+	text-align: center;
+	float: left;
+}
+
+#main .interview h2 > img {
+    width: 43px;
+}
+
+#main .interview h2 span {
+	margin-top: 63px;
+	padding-bottom: 150px;
+	display: inline-block;
+	position: relative;
+	z-index: 1000;
+}
+
+#main .interview h2 span img {
+	width: 10px;
+}
+
+#main .interview h2 span:before, 
+#main .interview h2 span:after {
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+
+#main .interview h2 span:before {
+	bottom: 0px;
+    width: 1px;
+    height: 130px;
+    background: #000;
+}
+
+#main .interview h2 span:after {
+	bottom: -8px;
+	left: 9px;
+    width: 13px;
+    height: 13px;
+    border-top: 1px solid #000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#main .hover01 a {
+	display: block;
+}
+
+#main .hover01.on .ttlBox h2 span:before{
+	left: 6px;
+	bottom: -50px;
+	height: 180px;
+	width: 1px;
+}
+
+#main .hover01.on .ttlBox h2 span:after{
+	bottom: -58px;
+	left: 9px;;
+}
+
+#main .interview .textBox {
+	margin-top: 28px;
+	float: right;
+	width: 473px;
+}
+
+#main .imgBoxR01 {
+	margin: 0 243px 0 13px;
+}
+
+#main .imgBoxR01 .textBox {
+	margin: 3px 0 0 0;
+}
+
+#main .imgBoxR01 h2 {
+	margin-bottom: 48px;
+}
+
+#main .imgBoxR01 h2 img {
+	width: 185px;
+}
+
+#main .imgBoxR01 .photoBox video {
+	position: relative;
+	z-index: 100;
+}
+
+#main .imgBoxR01 .textBox p {
+	margin-bottom: 59px;
+}
+
+#main .imgBoxR01 .linkUl {
+	margin-right: -60px;
+}
+
+#main .imgBoxR01 .linkUl li {
+	margin-right: 25px;
+	float: left;
+}
+
+#main .imgBoxR01 .linkUl li img {
+	height: 12px;
+}
+
+#main .imgBoxR01 .linkUl li a {
+	display: block;
+	padding-right: 140px;
+	position: relative;
+}
+
+#main .imgBoxR01 .linkUl li a:before, 
+#main .imgBoxR01 .linkUl li a:after {
+    position: absolute;
+    top: -15px;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+
+#main .imgBoxR01 .linkUl li a:before {
+    right: 29px;
+    width: 100px;
+    height: 1px;
+    background: #000;
+}
+
+#main .imgBoxR01 .linkUl li a:after {
+	right: 32px;
+    width: 13px;
+    height: 13px;
+    border-top: 1px solid #000;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#main .imgBoxR01 .linkUl li a:hover:before{
+	right: 9px;
+	width: 120px;
+}
+
+#main .imgBoxR01 .linkUl li a:hover:after{
+	right: 12px;
+}
+
+#main .imgBoxR01 .linkUl li:last-child {
+	margin-right: 0;
+}
+
+#gFooter {
+	margin-bottom: 0;
+	padding-bottom: 25px;
+	background: #FFF;
+	z-index: 10;
+}
+
+@media all and (min-height: 0) and (max-height: 690px) {
+	#main .mainVisual .txtBox {
+		top: 15%;
+	}
+	
+	#main .mainVisual h2 {
+		margin-bottom: 25px;
+	}
+	
+	#main .mainVisual p {
+		line-height: 1.8;
+	}
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+	#main {
+		padding-top: 75px;
+	}
+	
+	#main .indexBgBox {
+		padding-bottom: 85px;
+		margin-top: calc(100vh - 75px);
+	}
+	
+	#main .mainVisual {
+		padding: 0 0 50px 20px;
+		width: 100%;
+		top: 75px;
+		height: calc(100vh - 75px);
+	}
+	
+	#main .mainVisual .arrow {
+		position: absolute;
+		bottom: 3px;
+		right: 20px;
+		-moz-transition: all 0.3s ease-out;
+		-ms-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		transition: none;
+	}
+	
+	#main .mainVisual .arrow:hover {
+		bottom: 3px;
+	}
+
+	#main .mainVisual:before {
+		bottom: 18px;
+		right: 20px;
+	}
+
+	#main .mainVisual .txtBox {
+		display: block;
+		left: 41%;
+		top: 11%;
+		width: 62.5%;
+	}
+
+	#main .mainVisual h2 {
+		margin: 0 0 16px -63px;
+	}
+	
+	#main .mainVisual h2 img {
+		width: 192px;
+	}
+
+	#main .mainVisual h3 {
+		margin-bottom: 43px;
+	}
+
+	#main .mainVisual h3 img {
+		width: 174px;
+	}
+	
+	#main .mainVisual h3:after {
+		width: 39px;
+		bottom: -25px;
+	}
+
+	#main .mainVisual p {
+		margin-bottom: 9px;
+		font-size: 11px;
+		line-height: 1.9;
+		letter-spacing: 0.5px;
+	}
+	
+	#main .recruitBox a:hover {
+		color: #000;
+	}
+
+	#main .recruitBox {
+		padding-top: 70px;
+		margin-bottom: 57px;
+	}
+
+	#main .recruitBox .subBox {
+		width: auto;
+		float: none;
+	}
+
+	#main .recruitBox h3 {
+		margin-bottom: 19px;
+	}
+	
+	#main .recruitBox h3 img {
+		width: 175px;
+	}
+	
+	#main .hover01 .topJs {
+		width: auto;
+		height: auto;
+	}
+
+	#main .recruitBox li {
+		margin-bottom: 21px;
+		padding-bottom: 17px;
+		width: auto;
+		float: none;
+		border-bottom: 1px solid #D9D9D9;
+	}
+	
+	#main .recruitBox li:last-child {
+		margin-bottom: 0;
+	}
+	
+	#main .recruitBox li:nth-child(2n) {
+		float: none;
+	}
+
+	#main .recruitBox .ttl {
+		margin-bottom: 7px;
+		font-size: 14px;
+		letter-spacing: 2px;
+		border-bottom: none;
+	}
+
+	#main .recruitBox .ttl span {
+		font-size: 10px;
+		font-weight: normal;
+	}
+
+	#main .recruitBox dt {
+		margin-bottom: 1px;
+		font-weight: bold;
+	}
+
+	#main .recruitBox dt span {
+		font-weight: normal;
+	}
+
+	#main p {
+		font-size: 10px;
+	}
+
+	#main .imgBoxR {
+		margin: 0 0 103px 0;
+	}
+
+	#main .imgBoxR .textBox {
+		margin-top: 0;
+		width: auto;
+		position: relative;
+		z-index: 1000;
+	}
+
+	#main .imgBoxR h2 {
+		margin-bottom: 20px;
+	}
+	
+	#main .imgBoxR h2 > img {
+		width: 135px;
+	}
+
+	#main .imgBoxR h2 span {
+		margin: 28px 0 0 33px;
+		padding-right: 15px;
+	}
+	
+	#main .imgBoxR h2 span:before, 
+	#main .imgBoxR h2 span:after {
+		position: absolute;
+		top: -19px;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		content: "";
+		vertical-align: middle;
+		transition: all linear 0.3s;
+		-webkit-transition: all linear 0.3s;
+	}
+	
+	#main .imgBoxR h2 span:before {
+		left: 132px;
+		width: 90px;
+	}
+	
+	#main .imgBoxR h2 span:after {
+		left: 150px;
+		width: 8px;
+		height: 8px;
+	}
+
+	#main .imgBoxR h2 span img {
+		width: 63px;
+	}
+
+	#main .imgBoxR h2 span:before, 
+	#main .imgBoxR h2 span:after {
+		top: -19px;
+	}
+
+	#main .imgBoxR h2 span:before {
+		left: 70px;
+		width: 68px;
+	}
+
+	#main .imgBoxR h2 span:after {
+		left: 129px;
+	}
+	
+	#main .hover01.on h2 span:before{
+		left: 70px;
+		width: 68px;
+	}
+	
+	#main .hover01.on h2 span:after{
+		left: 129px;
+	}
+
+	#main .imgBoxR .ttl {
+		margin-bottom: 14px;
+		font-size: 15px;
+		letter-spacing: 1.5px;
+	}
+	
+	#main .imgBoxR .photoBox {
+		margin: -69px -20px 0 0;
+		width: 87.2%;
+		float: right;
+	}
+	
+	#main .imgBoxR .photoBox img {
+		width: 100%;
+	}
+
+	#main .interview {
+		min-width: inherit;
+		margin-bottom: 97px;
+	}
+
+	#main .interview .photo {
+		width: 83.6%;
+		margin: 0 -20px 0 0;
+		max-width: none;
+	}
+	
+	#main .interview .photo video {
+		width: 100%;
+	}
+	
+	.android #main .interview .photo video,
+	.other #main .interview .photo video {
+		display: none !important;
+	}
+	
+	.android #main .interview .photo,
+	.other #main .interview .photo {
+		background: url(/rc/img/top/video_img03.jpg) no-repeat left top;
+		background-size: cover;
+	}
+
+	#main .interview .subBox {
+		margin: 0 0 42px 0;
+	}
+
+	#main .interview .photoBox {
+		width: 56.5%;
+		margin: 0 60px 17px -20px;
+		float: left;
+		object-fit: cover;
+	}
+	
+	#main .interview .photoBox video {
+		width: 100%;
+		height: auto;
+	}
+	
+	.android #main .interview .photoBox video,
+	.other #main .interview .photoBox video {
+		display: none !important;
+	}
+	
+	.android #main .interview .photoBox,
+	.other #main .interview .photoBox {
+		background: url(/rc/img/top/video_img02.jpg) no-repeat left top;
+		background-size: cover;
+	}
+
+	#main .interview .ttlBox {
+		margin-top: -2px;
+	}
+	
+	#main .interview h2 > img {
+		width: 25px;
+	}
+
+	#main .interview h2 span {
+		margin: 30px 0 -40px;
+		padding-bottom: 75px;
+	}
+	
+	#main .interview h2 span:before, 
+	#main .interview h2 span:after {
+		position: absolute;
+		left: 4px;
+		margin: auto;
+		content: "";
+		vertical-align: middle;
+		transition: all linear 0.3s;
+		-webkit-transition: all linear 0.3s;
+	}
+	
+	#main .interview h2 span:before {
+		bottom: 0;
+		height: 70px;
+	}
+	
+	#main .interview h2 span:after {
+		bottom: -5px;
+		left: 6px;
+		width: 8px;
+		height: 8px;
+	}
+	
+	#main .hover01.on .ttlBox h2 span:before{
+		left: 4px;
+		bottom: 0;
+		width: 1px;
+		height: 70px;
+	}
+	
+	#main .hover01.on .ttlBox h2 span:after{
+		bottom: -5px;
+		left: 6px;;
+	}
+	
+	#main .interview h2 span img {
+		width: 8px;
+	}
+
+	#main .interview .textBox {
+		margin-top: 0;
+		float: none;
+		width: auto;
+		clear: both;
+	}
+
+	#main .imgBoxR01 {
+		margin: 0 0 0 9px;
+	}
+	
+	#main .imgBoxR01 .photoBox {
+		margin: 0 27px 15px 0;
+		width: 49%;
+		float: left;
+	}
+	
+	#main .imgBoxR01 .photoBox video {
+		width: 100%;
+	}
+	
+	.android #main .imgBoxR01 .photoBox video,
+	.other #main .imgBoxR01 .photoBox video {
+		display: none !important;
+		z-index: -1;
+	}
+	
+	.android #main .imgBoxR01 .photoBox,
+	.other #main .imgBoxR01 .photoBox {
+		background: url(/rc/img/top/video_img04.jpg) no-repeat left top;
+		background-size: cover;
+	}
+
+	#main .imgBoxR01 .textBox {
+		margin: 0;
+		padding-top: 18px;
+	}
+
+	#main .imgBoxR01 h2 {
+		margin-bottom: 22px;
+	}
+
+	#main .imgBoxR01 h2 img {
+		width: 108px;
+	}
+
+	#main .imgBoxR01 .textBox p {
+		margin-bottom: 0px;
+	}
+	
+	#main .imgBoxR01 .linkUl {
+		width: 100%;
+		float: left;
+		padding-top: 20px;
+	}
+
+	#main .imgBoxR01 .linkUl li {
+		margin-right: 27px;
+	}
+
+	#main .imgBoxR01 .linkUl li img {
+		height: 9px;
+	}
+	
+	#main .imgBoxR01 .linkUl li a {
+		padding-right: 45px;
+	}
+	
+	#main .imgBoxR01 .linkUl li a:before, 
+	#main .imgBoxR01 .linkUl li a:after {
+		top: -15px;
+		bottom: 3px;
+	}
+	
+	#main .imgBoxR01 .linkUl li a:before {
+		left: 76px;
+		width: 30px;
+		height: 1px;
+		background: #000;
+	}
+	
+	#main .imgBoxR01 .linkUl li a:after {
+		left: 97px;
+		width: 8px;
+		height: 8px;
+	}
+	
+	#main .imgBoxR01 .linkUl li a:hover:before{
+		width: 30px;
+	}
+	
+	#main .imgBoxR01 .linkUl li:last-child a:before {
+		left: 53px;
+	}
+	
+	#main .imgBoxR01 .linkUl li:last-child a:after {
+		left: 74px;
+	}
+	
+	#gFooter.topFooter {
+		padding-bottom: 25px;
+		text-align: center;
+	}
+	
+	#gFooter.topFooter .pageTop {
+		margin-bottom: 6px;
+	}
+	
+	#gFooter.topFooter .fNavi {
+		margin-bottom: 17px;
+		text-align: center !important;
+	}
+	
+	#gFooter.topFooter .fNavi li:first-child {
+		margin-bottom: 3px;
+	}
+	
+	#gFooter.topFooter .fNavi li {
+		padding: 0 8px;
+		float: none !important;
+		display: inline-block;
+		margin-right: 0 !important;
+	}
+
+}
+
+@media all and (min-width: 0) and (max-width: 359px) {
+	#main .imgBoxR h2 span:before {
+		width: 50px;
+	}
+
+	#main .imgBoxR h2 span:after {
+		left: 111px;
+	}
+	
+	#main .hover01.on h2 span:before{
+		width: 50px;
+	}
+	
+	#main .hover01.on h2 span:after{
+		left: 111px;
+	}
+	
+	#main p.shopTxt {
+		letter-spacing: -0.5px;
+	}
+	
+	#main .mainVisual p {
+		letter-spacing: -0.5px;
+	}
+	
+	#main .imgBoxR01 h2 {
+		margin-bottom: 15px;
+	}
+	
+	#main .imgBoxR01 .photoBox {
+		margin-right: 15px;
+		z-index: 100;
+	}
+	
+	#main .imgBoxR01 .textBox {
+		margin-right: -10px;
+		padding-top: 10px;
+		position: relative;
+		z-index: 0;
+	}
+	
+	#main .imgBoxR01 .textBox p {
+		margin-bottom: 0;
+		letter-spacing: -1px;
+		line-height: 2.4;
+	}
+	
+	#main .recruitBox dt span {
+		padding: 5px 5px 4px;
+	}
+}
