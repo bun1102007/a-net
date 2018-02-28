@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>RECRUIT｜A-net Inc.［株式会社エイ・ネット］</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="RECRUIT｜A-net Inc.［株式会社エイ・ネット］">
+<meta property="og:description" content="">
+<meta property="og:image" content="rc/img/common/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="http://www.a-net.com/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/rc/css/common/common.css">
+<link rel="stylesheet" type="text/css" href="/rc/css/index.css">
+<script src="/a-net/rc/js/html5media.min.js"></script>
+<script src="/rc/js/jquery.js"></script>
+<script src="/rc/js/common.js"></script>
+<script src="/rc/js/jquery.matchHeight.js"></script>
+<script src="/rc/js/jquery.lazyload.min.js"></script>
+<script src="/rc/js/sticky-kit.js"></script>
+<script src="/rc/js/jquery.BlackAndWhite.js"></script>
+<script>
+$(function(){
+	$('#main .recruitBox li').matchHeight();	
+	var pcvideo = document.getElementById("pcVideo");
+	var spvideo = document.getElementById("spVideo");
+	var video01 = document.getElementById("video01");
+	var video02 = document.getElementById("video02");
+	var video03 = document.getElementById("video03");
+	if($(window).width()>767){
+		$(window).scroll(function(){
+			var windowHeight = $(window).height(),
+			topWindow = $(window).scrollTop();
+			var targetPosition01 = $('#main .interview #video01').offset().top;
+			if(topWindow > targetPosition01 - windowHeight + 100){
+				video01.play();
+			}
+			var targetPosition02 = $('#main .interview #video02').offset().top;
+			if(topWindow > targetPosition02 - windowHeight + 100){
+				video02.play();
+			}
+			var targetPosition03 = $('#main #video03').offset().top;
+			if(topWindow > targetPosition03 - windowHeight + 100){
+				video03.play();
+			}
+		}).trigger('scroll');
+	}else if(navigator.userAgent.match(/OS 10_[0-9] /i)||navigator.userAgent.match(/OS 10_[0-9]_[0-9] /i)||navigator.userAgent.match(/OS 11_[0-9] /i)||navigator.userAgent.match(/OS 11_[0-9]_[0-9] /i)){
+		$(window).scroll(function(){
+			var windowHeight = $(window).height(),
+			topWindow = $(window).scrollTop();
+			var targetPosition01 = $('#main .interview #video01').offset().top;
+			if(topWindow > targetPosition01 - windowHeight + 100){
+				video01.play();
+			}
+			var targetPosition02 = $('#main .interview #video02').offset().top;
+			if(topWindow > targetPosition02 - windowHeight + 100){
+				video02.play();
+			}
+			var targetPosition03 = $('#main #video03').offset().top;
+			if(topWindow > targetPosition03 - windowHeight + 100){
+				video03.play();
+			}
+		}).trigger('scroll');
+		$('#pcVideo source').remove();
+	}else if (navigator.userAgent.indexOf('Android') > 0){
+		$('body').addClass('android');
+		/*document.getElementById("video01").controls=true;
+		document.getElementById("video02").controls=true;
+		document.getElementById("video03").controls=true;*/
+		$('#pcVideo source,#spVideo source,#video01 source,#video02 source,#video03 source').remove();
+		
+	}else{
+		$('body').addClass('other');
+		/*pcvideo.remove();
+		spvideo.remove();
+		video01.remove();
+		video02.remove();
+		video03.remove();*/
+		$('#pcVideo source,#spVideo source,#video01 source,#video02 source,#video03 source').remove();
+	}
+	
+	$(window).load(function(){
+		$('.loading').fadeOut();
+	});
+	
+	$(window).resize(function(){
+		$('.android #main .interview .photoBox').height($('.android #main .interview .photoBox').width()*383/251);
+		$('.android #main .interview .photo').height($('.android #main .interview .photo').width()*383/609);
+		$('.android #main .imgBoxR01 .photoBox').height($('.android #main .imgBoxR01 .photoBox').width()*382/270);
+		$('.other #main .interview .photoBox').height($('.other #main .interview .photoBox').width()*383/251);
+		$('.other #main .interview .photo').height($('.other #main .interview .photo').width()*383/609);
+		$('.other #main .imgBoxR01 .photoBox').height($('.other #main .imgBoxR01 .photoBox').width()*382/270);
+		$('#video01').height($('#video01').width()*383/251);
+		$('#video02').height($('#video02').width()*383/609);
+		$('#video03').height($('#video03').width()*382/270);
+		var wh = $('#main .mainVisual').width() / $('#main .mainVisual').height();
+		if($(window).width() > 767){
+			var videowh = 1192/648;
+		/*	pcvideo.addEventListener("canplay", function(){
+				$('#main .mainVisual .txtBox').delay(300).fadeIn();
+			});*/
+			
+			
+			setTimeout(function(){
+				   $('#main .mainVisual .txtBox').delay(300).fadeIn();
+			},1000);	
+					
+			
+		}else{
+		/*	var videowh = 708/800;
+			spvideo.addEventListener("canplay", function(){
+				$('#main .mainVisual .txtBox').delay(300).fadeIn();
+			});*/
+			
+			setTimeout(function(){
+				   $('#main .mainVisual .txtBox').delay(300).fadeIn();
+			},1000);	
+			
+		}
+		if(wh > videowh){
+			$('#main .mainVisual video').addClass('size01').removeClass('size02');
+		}else{
+			$('#main .mainVisual video').addClass('size02').removeClass('size01');
+		}
+	}).trigger('resize');
+	
+	if($('body').hasClass('ie')){
+		$('#main .hover01 .topJs').BlackAndWhite();
+	}
+	/*$(window).scroll(function(){
+		if($(window).width()>767){
+			if($(window).scrollTop()>$('#gFooter').outerHeight()){
+				$('#gFooter').show();
+			}else {
+				$('#gFooter').hide();
+			}
+		}
+	}).trigger('scroll');*/
+});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15619957-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+<div id="container">
+	<div class="loading"><div class="pho"><img src="/rc/img/top/loading.gif" alt=""></div></div>
+	<?php include($_SERVER['DOCUMENT_ROOT']."/rc/template/header.php"); ?>
+	<section id="main">
+		<div class="mainVisual target noAction">
+			<div class="videoBox">
+				<div class="sample"></div>
+					<video id="pcVideo" class="size02 pc" loop muted data-autoplay autoplay webkit-playsinline playsinline poster="/rc/img/top/main_img.jpg">
+						<source src="/rc/img/top/main.mp4" type="video/mp4">
+					</video>
+					<video id="spVideo" class="size01 sp" loop muted data-autoplay autoplay webkit-playsinline playsinline poster="/rc/img/top/video_img01.jpg">
+						<source src="/rc/img/top/main_sp.mp4" type="video/mp4">
+					</video>
+			</div>
+			<div class="txtBox">
+				<h2><img data-original="/rc/img/top/h2_img01.png" alt="想いがつむぐ、 確かな価値" class="lazy"></h2>
+				<h3><img data-original="/rc/img/top/h3_img01.png" alt="YOUR HOPE SPINS THE THREAD OF RELIABLE VALUE." class="lazy pc"><img data-original="/rc/img/top/sp_h3_img01.png" alt="YOUR HOPE SPINS THE THREAD OF RELIABLE VALUE." class="lazy sp"></h3>
+				<p>私たちの創るもので、<br>
+					私たちの届けるもので、<br>
+					今日も誰かの人生を豊かにしたい。</p>
+				<p> 移りゆく時代の中でも、<br class="sp">
+					色あせることなく。</p>
+				<p> 共に創ろう、確かな価値を。<br>
+					君の活躍の舞台はここにある。</p>
+			</div>
+			<div class="arrow"><a href="#page"><img src="/rc/img/top/arrow03.png" alt=""></a></div>
+		</div>
+		<div class="indexBgBox">
+			<div class="recruitBox" id="page">
+				<div class="comBox clearfix target">
+					<div class="photo pc"><img data-original="/rc/img/top/photo01.jpg" alt="" class="lazy"></div>
+					<div class="subBox">
+						<h3><img data-original="/rc/img/top/h3_img02.png" alt="RECRUIT INFORMATION" class="lazy"></h3>
+						<ul>
+							<li>
+								<p class="ttl"><a href="/rc/news/graduate/">新卒採用</a></p>
+								<dl>
+									<dt>2018.01.24<span>インターンシップ</span><span>19年度新卒採用</span></dt>
+									<dd><a href="/rc/news/graduate/20180124-2/">【インターンシップ情報】エイ・ネットを知る1dayセミナーのお知らせ</a></dd>
+								</dl>
+							</li>
+							<li>
+								<p class="ttl"><a href="/rc/news/career/">中途採用</a></p>
+								<dl>
+									<dt>2018.02.05<span>SHOP STAFF</span><span class="tag">急募</span></dt>
+									<dd><a href="/rc/news/career/20180205-2/">【名古屋】中途販売職　募集中</a></dd>
+								</dl>
+							</li>
+							<li>
+								<p class="ttl"><a href="/rc/news/handi/">障がい者採用</a></p>
+								<dl>
+									<dt>2018.01.01<span>障がい者採用</span><span>中途採用</span></dt>
+									<dd><a href="/rc/news/handi/20180131/">本社清掃担当　募集中（若干名）</a></dd>
+								</dl>
+							</li>
+							<li>
+								<p class="ttl"><a href="/rc/news/acon/">物流部門<span>（A-netグループ会社 ）</span></a></p>
+								<dl>
+									<dt>2018.01.31<span>物流部門</span><span>パート・アルバイト</span></dt>
+									<dd><a href="/rc/news/acon/20180131/">パート・アルバイト募集中</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="comBox target">
+				<div class="imgBoxR clearfix hover01"><a href="/rc/message/" class="pageChange">
+					<div class="textBox">
+						<h2><img data-original="/rc/img/top/h2_img02.png" alt="01 MESSAGE" class="lazy"><span><img data-original="/rc/img/top/link01.png" alt="READ MORE" class="lazy"></span></h2>
+						<p class="ttl">私たちの「オリジナリティ」で<br>
+							人々の生活を豊かにしたい</p>
+						<p>真摯に仕事と向き合い、<br class="sp">
+							同じ目標に向かって楽しみながら努力できる、<br>
+							意欲あふれるエネルギーを求めています。</p>
+					</div>
+					<div class="photoBox topJs"> <img src="/rc/img/top/photo02.jpg" alt="" class="lazy"> </div>
+					</a></div>
+			</div>
+			<div class="interview clearfix target">
+				<div class="comBox hover01"> <a href="/rc/interview/" class="pageChange">
+					<div class="subBox clearfix">
+						<div class="photoBox">
+							<video id="video01" width="378" height="520" loop muted webkit-playsinline playsinline poster="/rc/img/top/video_img02.jpg">
+								<source src="/rc/img/top/int01.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="ttlBox">
+							<h2><img data-original="/rc/img/top/h2_img03.png" alt="02 INTERVIEW" class="lazy"><br>
+								<span><img data-original="/rc/img/top/link02.png" alt="READ MORE" class="lazy"></span></h2>
+						</div>
+						<div class="textBox">
+							<p class="shopTxt">商品には携わる人の数だけの想いがあります。<br>
+								「つくる」「つなぐ」「とどける」それぞれの<br>
+								立場からモノづくりに込める想いを聞きました。</p>
+						</div>
+					</div>
+					<div class="photo">
+						<video id="video02" width="559" height="320" loop muted playsinline webkit-playsinline poster="/rc/img/top/video_img03.jpg">
+							<source src="/rc/img/top/int02.mp4" type="video/mp4">
+						</video>
+					</div>
+					</a> </div>
+			</div>
+			<div class="comBox target">
+				<div class="imgBoxR imgBoxR01 clearfix">
+					<div class="photoBox">
+						<video id="video03" width="320" height="412" loop muted playsinline webkit-playsinline poster="/rc/img/top/video_img04.jpg">
+							<source src="/rc/img/top/career.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="textBox">
+						<h2><img data-original="/rc/img/top/h3_img04.png" alt="03 CAREER" class="lazy"></h2>
+						<p>未経験の方でも<br class="sp">
+							プロフェッショナルとして<br>
+							様々なキャリアを積んで<br class="sp">
+							いただけるような、<br class="pc">
+							研修や<br class="sp">
+							サポート制度を整えています。</p>
+						<ul class="linkUl clearfix pc">
+							<li><a href="/rc/careerstep/" class="pageChange"><img data-original="/rc/img/top/link03.png" alt="CAREER STEP" class="lazy"></a></li>
+							<li><a href="/rc/support/" class="pageChange"><img data-original="/rc/img/top/link04.png" alt="SUPPORT" class="lazy"></a></li>
+						</ul>
+					</div>
+					<ul class="linkUl clearfix sp">
+						<li><a href="/rc/careerstep/" class="pageChange"><img data-original="/rc/img/top/link03.png" alt="CAREER STEP" class="lazy"></a></li>
+						<li><a href="/rc/support/" class="pageChange"><img data-original="/rc/img/top/link04.png" alt="SUPPORT" class="lazy"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="gFooter" class="topFooter">
+		<div class="pageTop"><a href="#container"><img data-original="/rc/img/common/page_top.png" alt="" class="lazy"></a></div>
+		<ul class="fNavi en clearfix">
+			<li><a href="http://www.a-net.com/" target="_blank" class="noChange">CORPORATE SITE</a></li>
+			<br class="sp">
+			<li><a href="http://www.a-net.com/privacy" target="_blank" class="noChange">PRIVACY POLICY</a></li>
+			<li><a href="http://www.a-net.com/contact" target="_blank" class="noChange">CONTACT</a></li>
+		</ul>
+		<p class="copyright en">Copyright &copy; A-net All Right Reserved.</p>
+	</footer>
+</div>
+</body>
+</html>
